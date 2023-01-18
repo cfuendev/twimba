@@ -1,0 +1,20 @@
+{
+  "name": "@cfuen/twimba",
+  "version": "0.1.0",
+  "description": "A small compiler that converts Imba CSS into Vanilla CSS at runtime",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twimba",
+    "imba",
+    "css",
+    "twind",
+    "css-in-js",
+    "tailwindcss",
+    "tailwind-in-js"
+  ],
+  "author": "Cfuen (Juan Castillo) - https://github.com/cfuendev/",
+  "license": "MIT"
+}
