@@ -4,19 +4,37 @@
 
 # twimba
 
-A small (2kb min + gzip) compiler that converts Imba CSS into Vanilla CSS at runtime.
+A small (3kb min + gzip) macro that converts inline Imba CSS into Vanilla CSS at runtime.
 
 ---
 
-## Progress?
+## 🎯 Progress?
+
+Jan 19, 2023: **Twimba v.0.2.0**, 22 orders of magnitude faster than v0.1 and supports colors.
 
 Jan 18, 2023: **Twimba v.0.1.0**, a.k.a initial alpha release. **This is far from stable.**
 
-## Known issues
+## ✨ Features & Drawbacks
 
-- Whitespace between a property's name and value causes problems.
+🔥 Zero config
 
-## Credits
+Get some of the benefits of Imba's CSS without the need for... Imba, Vite, or anything really.
+
+🛠️ Framework agnostic
+
+Bring Twimba to your favorite tool! Works with anything, even SSR.
+
+✔️ Nice, cheap and pretty
+
+Twimba ships a compiler for inline styles, not CSS.
+
+🔒 Limited, thought
+
+Inline styles means no pseudo-selectors, but you still get an awesome syntax and some palettes.
+
+This could change in the future, but for now this is all you get.
+
+## 🎬 Credits
 
 ### Inspirations
 
@@ -27,6 +45,6 @@ Jan 18, 2023: **Twimba v.0.1.0**, a.k.a initial alpha release. **This is far fro
 - [goober:](https://goober.rocks/) An insanely small CSS-In-JS solution that really made me appreciate and admire lightweight packages.
 - [little-vdom:](https://github.com/luwes/little-vdom) An insanely small JSX solution that convinced me we can have nice things packaged in a small bundle.
 
-### Where I stole some of the README structure from
+### 😈 Where I stole some of the README structure from
 
 [Twind's GitHub README](https://github.com/tw-in-js/twind#readme)
