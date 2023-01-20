@@ -26,7 +26,7 @@ Bring Twimba to your favorite tool! Works with anything, even SSR.
 
 ✔️ Nice, cheap and pretty
 
-Twimba ships a compiler for inline styles, not CSS.
+Twimba ships a macro for inline styles, not CSS.
 
 🔒 Limited, thought
 
