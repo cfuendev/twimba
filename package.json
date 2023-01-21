@@ -1,9 +1,12 @@
 {
   "name": "@cfuen/twimba",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A small compiler that converts Imba CSS into Vanilla CSS at runtime",
   "type": "module",
   "scripts": {
+    "build": "npm run minify && npm run gzip",
+    "minify": "esbuild --bundle twimba.js --outfile=dist/twimba.min.js --minify --format=esm",
+    "gzip": "gzipme dist/twimba.min.js -O dist/twimba.min.js.gz",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -16,5 +19,8 @@
     "tailwind-in-js"
   ],
   "author": "Cfuen (Juan Castillo) - https://github.com/cfuendev/",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.17.3"
+  }
 }

@@ -455,6 +455,13 @@ export const twimba = (strings, ...values) => {
           b = "";
           continue;
         }
+        // if number
+        if (/\d/g.test(b) && !/\D/g.test(b)) {
+          b += "px"
+          pl.push(b);
+          b = ""
+          continue;
+        }
         pl.push(b);
         b = "";
         continue;
@@ -463,7 +470,7 @@ export const twimba = (strings, ...values) => {
     }
   }
   for (let i = 0; i < pl.length; i++) {
-    if (typeof pl[i] !== Array) {
+    if (!Array.isArray(pl[i])) {
       r += pl[i] + ":" + pl[i + 1] + ";";
       i += 1;
       continue;

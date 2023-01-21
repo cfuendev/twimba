@@ -8,13 +8,32 @@ A small (3kb min + gzip) macro that converts inline Imba CSS into Vanilla CSS at
 
 ---
 
-## 🎯 Progress?
+## 🎯 Changelog
 
-Jan 19, 2023: **Twimba v.0.2.0**, 22 orders of magnitude faster than v0.1 and supports colors.
+<!--Jan 19, 2023: **Twimba v.0.3.0**, Size shorthands are now supported!-->
 
-Jan 18, 2023: **Twimba v.0.1.0**, a.k.a initial alpha release. **This is far from stable.**
+- Jan 19, 2023: **Twimba v.0.2.0**, 22 orders of magnitude faster than v0.1 and supports colors.
 
-## ✨ Features & Drawbacks
+    - Jan 21, 2023: **0.2.1**
+      - fix custom properties not being generated properly.
+      - fix numeric values without a unit not being appended with "px".
+      - add simple build script for contributors (And for my mental health)
+
+- Jan 18, 2023: **Twimba v.0.1.0**, a.k.a initial alpha release. **This is far from stable.**
+
+## ✨ Features 
+
+- [x] CSS shorthands (ie. bgc => background-color)
+
+- [x] Custom properties (ie. px => padding-x => padding-left; pading-right;)
+
+- [x] Colors (ie. teal6, red2)
+
+- [ ] Sizes (ie. xxs, md, xl3)
+
+- [ ] [Custom Units](https://imba.io/docs/css/syntax#custom-units)
+
+## 💪 Advantages & Drawbacks
 
 🔥 Zero config
 

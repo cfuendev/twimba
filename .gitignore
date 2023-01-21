@@ -1,2 +1,3 @@
 *.excalidraw
 *.spec.js
+node_modules/
