@@ -371,6 +371,17 @@ export const twimba = (strings, ...values) => {
     "cooler9": "rgb(15, 23, 41)",
     "hflex": "flex;flex-direction:row",
     "vflex": "flex;flex-direction:column",
+    "xxs": "10px",
+    "xs": "12px",
+    "sm": "14px",
+    "md": "16px",
+    "lg": "18px",
+    "xl": "20px",
+    "2xl": "24px",
+    "3xl": "30px",
+    "4xl": "36px",
+    "5xl": "48px",
+    "6xl": "64px",
   };
   const customPropertyNameRules = {
     "ofx": ["overflow-left", "overflow-right"],
@@ -412,12 +423,12 @@ export const twimba = (strings, ...values) => {
     }
   }
 
-    /*  b - buffer
-      tl = token list
-      i - token list index
-      j - token list token char(acter) index
-      c - char(acter)
-      pl = parsed (tokens) list */
+  /*  b - buffer
+    tl = token list
+    i - token list index
+    j - token list token char(acter) index
+    c - char(acter)
+    pl = parsed (tokens) list */
   tl = s.split(/\s/);
   let b = [];
   let pl = [];
@@ -461,7 +472,7 @@ export const twimba = (strings, ...values) => {
           pl.push(b);
           b = ""
           continue;
-        }
+        }
         pl.push(b);
         b = "";
         continue;

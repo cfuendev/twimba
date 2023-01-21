@@ -10,7 +10,7 @@ A small (3kb min + gzip) macro that converts inline Imba CSS into Vanilla CSS at
 
 ## 🎯 Changelog
 
-<!--Jan 19, 2023: **Twimba v.0.3.0**, Size shorthands are now supported!-->
+- Jan 19, 2023: **Twimba v.0.3.0**, Size shorthands are now supported!
 
 - Jan 19, 2023: **Twimba v.0.2.0**, 22 orders of magnitude faster than v0.1 and supports colors.
 
@@ -29,7 +29,7 @@ A small (3kb min + gzip) macro that converts inline Imba CSS into Vanilla CSS at
 
 - [x] Colors (ie. teal6, red2)
 
-- [ ] Sizes (ie. xxs, md, xl3)
+- [x] Sizes (ie. xxs, md, xl3)
 
 - [ ] [Custom Units](https://imba.io/docs/css/syntax#custom-units)
 
