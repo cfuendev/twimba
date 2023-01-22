@@ -1,6 +1,6 @@
 {
   "name": "@cfuen/twimba",
-  "version": "0.3.2",
+  "version": "0.3.0",
   "description": "A small macro that converts Imba CSS into Vanilla CSS at runtime!",
   "main": "dist/twimba.min.js",
   "module": "dist/twimba.min.js",
