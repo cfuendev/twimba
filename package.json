@@ -6,7 +6,7 @@
   "module": "dist/twimba.min.js",
   "type": "module",
   "scripts": {
-    "build": "npm run minify && npm run gzip",
+    "build": "pnpm run minify && pnpm run gzip",
     "minify": "esbuild --bundle twimba.js --outfile=dist/twimba.min.js --minify --format=esm",
     "gzip": "gzipme dist/twimba.min.js -O dist/twimba.min.js.gz",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,9 +23,10 @@
   "author": "Cfuen (Juan Castillo) - https://github.com/cfuendev/",
   "license": "MIT",
   "devDependencies": {
-    "esbuild": "^0.17.3"
+    "esbuild": "^0.17.3",
+    "pnpm": "^7.25.1"
   },
-   "exports": {
+  "exports": {
     "require": "./dist/twimba.min.js",
     "default": "./dist/twimba.min.js"
   }
