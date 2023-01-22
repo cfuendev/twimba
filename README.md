@@ -8,6 +8,31 @@ A small (3kb min + gzip) macro that converts inline Imba CSS into Vanilla CSS at
 
 ---
 
+### Getting Started
+
+Before anything, you'll have to install Twimba
+
+```sh
+npm install @cfuen/twimba
+```
+```sh
+yarn install @cfuen/twimba
+```
+```sh
+pnpm install @cfuen/twimba
+```
+
+The most basic way to use Twimba is to use Vanilla JS and alter the DOM with it.
+
+```js
+import { twimba } from '@cfuen/twimba'
+
+const div = document.createElement("div");
+div.innerText = "Twimba is kinda cool";
+div.style = twimba`fs:sm rd:md px:5 py:2 bg:cyan4 c:white`
+document.body.appendChild(div);
+```
+
 ## 🎯 Changelog
 
 - Jan 19, 2023: **Twimba v.0.3.0**, Size shorthands are now supported!
