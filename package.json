@@ -1,7 +1,7 @@
 {
   "name": "@cfuen/twimba",
   "version": "0.3.0",
-  "description": "A small compiler that converts Imba CSS into Vanilla CSS at runtime",
+  "description": "A small macro that converts Imba CSS into Vanilla CSS at runtime",
   "type": "module",
   "scripts": {
     "build": "npm run minify && npm run gzip",
