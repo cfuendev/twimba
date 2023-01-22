@@ -21,7 +21,6 @@ jobs:
         with:
           version: 6.0.2
       - run: pnpm install --frozen-lockfile
-      - run: pnpm publish
 
   publish-npm:
     needs: build
@@ -33,6 +32,7 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: pnpm install --frozen-lockfile
+      - run: echo "//registry.npmjs.org/:_authToken=${NPM_ACCESS_TOKEN}" > ~/.npmrc
       - run: pnpm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
