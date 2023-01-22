@@ -1,6 +1,6 @@
 {
   "name": "@cfuen/twimba",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "A small macro that converts Imba CSS into Vanilla CSS at runtime!",
   "main": "dist/twimba.min.js",
   "module": "dist/twimba.min.js",
@@ -26,7 +26,7 @@
     "esbuild": "^0.17.3"
   },
    "exports": {
-    "require": "dist/twimba.min.js",
-    "default": "dist/twimba.min.js"
+    "require": "./dist/twimba.min.js",
+    "default": "./dist/twimba.min.js"
   }
 }

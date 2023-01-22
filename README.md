@@ -39,6 +39,8 @@ document.body.appendChild(div);
 
   - Jan 22, 2023: **Twimba v.0.3.1**, Fix publish deploy workflow
 
+  - Jan 22, 2023: **Twimba v.0.3.2**, Change main repo publish action trigger
+
 - Jan 19, 2023: **Twimba v.0.2.0**, 22 orders of magnitude faster than v0.1 and supports colors.
 
     - Jan 21, 2023: **0.2.1**
