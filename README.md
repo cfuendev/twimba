@@ -37,6 +37,10 @@ document.body.appendChild(div);
 
 - Jan 19, 2023: **Twimba v.0.3.0**, Size shorthands are now supported!
 
+    - Feb 3, 2023: **0.3.1**
+      - fix default value for unspecified size units being 1px instead of 0.25rem
+      - fix `font-weight`'s value being parsed as a size value (And therefore getting transformed to px/rem)
+
 - Jan 19, 2023: **Twimba v.0.2.0**, 22 orders of magnitude faster than v0.1 and supports colors.
 
     - Jan 21, 2023: **0.2.1**

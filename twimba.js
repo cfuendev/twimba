@@ -467,8 +467,8 @@ export const twimba = (strings, ...values) => {
           continue;
         }
         // if number
-        if (/\d/g.test(b) && !/\D/g.test(b)) {
-          b += "px"
+        if (/\d/g.test(b) && !/\D/g.test(b) && !/font\-weight|fw/.test(pl[pl.length-1])) {
+          b = `${parseInt(b)*0.25}rem`
           pl.push(b);
           b = ""
           continue;
