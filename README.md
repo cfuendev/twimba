@@ -4,9 +4,14 @@
 
 # twimba
 
-A small (3kb min + gzip) macro that converts inline Imba CSS into Vanilla CSS at runtime.
+A small (3kb min + gzip) macro that converts inline Imba CSS into Vanilla CSS.
+
+<img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/@cfuen/twimba?style=flat-square"> <img alt="GitHub" src="https://img.shields.io/github/license/cfuendev/twimba?style=flat-square"> <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@cfuen/twimba?style=flat-square">
 
 ---
+
+It can be used in runtime like [Twind](https://github.com/tw-in-js/twind) or it can be used internally by your build scripts. All the same, it's Imba CSS-in-your-JS!
+
 
 ### Getting Started
 
@@ -35,18 +40,22 @@ document.body.appendChild(div);
 
 ## 🎯 Changelog
 
-- Jan 19, 2023: **Twimba v.0.3.0**, Size shorthands are now supported!
+- Jan 19, 2023: **Twimba v.0.3.0**, Size and easing shorthands!
 
     - Feb 3, 2023: **0.3.1**
-      - fix default value for unspecified size units being 1px instead of 0.25rem
-      - fix `font-weight`'s value being parsed as a size value (And therefore getting transformed to px/rem)
+      - fix default value for unspecified size units being 1px instead of 0.25rem.
+      - fix issue [#1](https://github.com/cfuendev/twimba/issues/1): `font-weight`'s value being parsed as a size value (And therefore getting transformed to px/rem).
 
-- Jan 19, 2023: **Twimba v.0.2.0**, 22 orders of magnitude faster than v0.1 and supports colors.
+    - Apr 20, 2023: **0.3.2**
+      - fix issue [#2](https://github.com/cfuendev/twimba/issues/2): Three-letter shorthands like `ead` and `eaf` not being correctly transpiled.
+      - fix YET ANOTHER PROBLEM from [#2](https://github.com/cfuendev/twimba/issues/2): Two-letter shorthands for easing properties (Such as `ea` and `eb`) not being correctly transpiled.
+
+- Jan 19, 2023: **Twimba v.0.2.0**, various orders of magnitude faster than v0.1 and supports colors.
 
     - Jan 21, 2023: **0.2.1**
       - fix custom properties not being generated properly.
       - fix numeric values without a unit not being appended with "px".
-      - add simple build script for contributors (And for my mental health)
+      - add simple build script for contributors (And for my mental health).
 
 - Jan 18, 2023: **Twimba v.0.1.0**, a.k.a initial alpha release. **This is far from stable.**
 
