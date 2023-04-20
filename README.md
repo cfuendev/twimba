@@ -4,7 +4,7 @@
 
 # twimba
 
-A small (4kb min + gzip) macro that converts inline Imba CSS into Vanilla CSS.
+A small (3kb min + gzip) macro that converts inline Imba CSS into Vanilla CSS.
 
 <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/@cfuen/twimba?style=flat-square"> <img alt="GitHub" src="https://img.shields.io/github/license/cfuendev/twimba?style=flat-square"> <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@cfuen/twimba?style=flat-square">
 
