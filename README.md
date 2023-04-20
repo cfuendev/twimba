@@ -10,7 +10,7 @@ A small (3kb min + gzip) macro that converts inline Imba CSS into Vanilla CSS.
 
 ---
 
-It can be used in runtime like [Twind](https://github.com/tw-in-js/twind) or it can be used internally by your build scripts. All the same, it's Imba CSS-in-your-JS!
+It can be used at runtime like [Twind](https://github.com/tw-in-js/twind) or it can be used internally by your build scripts. All the same, it's Imba CSS-in-your-JS!
 
 
 ### Getting Started
