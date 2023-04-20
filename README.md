@@ -4,7 +4,7 @@
 
 # twimba
 
-A small (3kb min + gzip) macro that converts inline Imba CSS into Vanilla CSS.
+A small (4kb min + gzip) macro that converts inline Imba CSS into Vanilla CSS.
 
 <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/@cfuen/twimba?style=flat-square"> <img alt="GitHub" src="https://img.shields.io/github/license/cfuendev/twimba?style=flat-square"> <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@cfuen/twimba?style=flat-square">
 
@@ -15,7 +15,7 @@ It can be used at runtime like [Twind](https://github.com/tw-in-js/twind) or it 
 
 ### Getting Started
 
-Before anything, you'll have to install Twimba
+Before anything, you'll have to add Twimba to your project
 
 ```sh
 npm install @cfuen/twimba
