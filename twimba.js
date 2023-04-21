@@ -463,7 +463,7 @@ export const twimba = (strings, ...values) => {
     j - token list token char(acter) index
     c - (current) char(acter)
     pl = parsed (tokens) list */
-  tl = s.split(/\s/);
+  tl = s.trim().split(/\s/);
   // console.log(tl)
   let b = [];
   let eb = null;
@@ -472,12 +472,14 @@ export const twimba = (strings, ...values) => {
   for (let i = 0; i < tl.length; i++) {
     for (let j = 0; j < tl[i].length; j++) {
       let c = tl[i][j];
-      if (eb && i === tl.length-2) {
+      console.log(c)
+      if (eb && i === tl.length-1) {
         //console.log(`pillese la i: ${i}\ny la j: ${j}`)
         //console.log(`pillese la tl.length: ${tl.length}\ny la tl[i].length: ${tl[i].length}`)
         //console.log(`sera? ${i === tl.length-2}`)
-        //console.log("DIOS")
-        //console.log(eb+' '+tl[i])
+        console.log("DIOS")
+        console.log(tl)
+        console.log(eb+' '+tl[i])
         pl.push(eb+' '+tl[i]);
         eb = null;
         break;
@@ -602,7 +604,7 @@ export const twimba = (strings, ...values) => {
         }
 
         if (eb) {
-          //console.log(`al final: ${eb}`)
+          console.log(`al final: ${eb}`)
           eb += " " + b;
           b = "";
           continue;

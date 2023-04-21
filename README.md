@@ -50,9 +50,6 @@ document.body.appendChild(div);
       - fix issue [#2](https://github.com/cfuendev/twimba/issues/2): Three-letter shorthands like `ead` and `eaf` not being correctly transpiled.
       - fix YET ANOTHER PROBLEM from [#2](https://github.com/cfuendev/twimba/issues/2): Two-letter shorthands for easing properties (Such as `ea` and `eb`) not being correctly transpiled.
 
-    - Apr 21, 2023: **0.3.3**
-      - not reported as an issue, but [#2](https://github.com/cfuendev/twimba/issues/2) was still a problem. ease shorthands would fail if used at the end of an Imba CSS string.
-
 - Jan 19, 2023: **Twimba v.0.2.0**, various orders of magnitude faster than v0.1 and supports colors.
 
     - Jan 21, 2023: **0.2.1**
