@@ -461,7 +461,7 @@ export const twimba = (strings, ...values) => {
     tl = token list
     i - token list index
     j - token list token char(acter) index
-    c - char(acter)
+    c - (current) char(acter)
     pl = parsed (tokens) list */
   tl = s.split(/\s/);
   // console.log(tl)
@@ -472,11 +472,21 @@ export const twimba = (strings, ...values) => {
   for (let i = 0; i < tl.length; i++) {
     for (let j = 0; j < tl[i].length; j++) {
       let c = tl[i][j];
+      if (eb && i === tl.length-2) {
+        //console.log(`pillese la i: ${i}\ny la j: ${j}`)
+        //console.log(`pillese la tl.length: ${tl.length}\ny la tl[i].length: ${tl[i].length}`)
+        //console.log(`sera? ${i === tl.length-2}`)
+        //console.log("DIOS")
+        //console.log(eb+' '+tl[i])
+        pl.push(eb+' '+tl[i]);
+        eb = null;
+        break;
+      }
       // if before : then propertyName
       if (c === ":") {
         if (eb) {
           pl.push(eb);
-          eb = "";
+          eb = null;
         }
         // look for it in the not-custom
         let propertyNameRule = propertyNameRules[b];
@@ -592,9 +602,10 @@ export const twimba = (strings, ...values) => {
         }
 
         if (eb) {
-          eb += " "+b;
-          b="";
-          continue
+          //console.log(`al final: ${eb}`)
+          eb += " " + b;
+          b = "";
+          continue;
         }
 
         pl.push(b);
