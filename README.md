@@ -46,7 +46,7 @@ document.body.appendChild(div);
       - fix default value for unspecified size units being 1px instead of 0.25rem.
       - fix issue [#1](https://github.com/cfuendev/twimba/issues/1): `font-weight`'s value being parsed as a size value (And therefore getting transformed to px/rem).
 
-    - Apr 20, 2023: **0.3.2**
+    - Apr 20, 2023: **0.3.4**
       - fix issue [#2](https://github.com/cfuendev/twimba/issues/2): Three-letter shorthands like `ead` and `eaf` not being correctly transpiled.
       - fix YET ANOTHER PROBLEM from [#2](https://github.com/cfuendev/twimba/issues/2): Two-letter shorthands for easing properties (Such as `ea` and `eb`) not being correctly transpiled.
 
