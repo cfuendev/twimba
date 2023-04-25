@@ -4,7 +4,7 @@
 
 # twimba
 
-A small (3kb min + gzip) macro that converts inline Imba CSS into Vanilla CSS.
+A small (4kb min + gzip) macro that converts inline Imba CSS into Vanilla CSS.
 
 <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/@cfuen/twimba?style=flat-square"> <img alt="GitHub" src="https://img.shields.io/github/license/cfuendev/twimba?style=flat-square"> <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@cfuen/twimba?style=flat-square">
 
@@ -49,6 +49,10 @@ document.body.appendChild(div);
     - Apr 20, 2023: **0.3.5**
       - fix issue [#2](https://github.com/cfuendev/twimba/issues/2): Three-letter shorthands like `ead` and `eaf` not being correctly transpiled.
       - fix YET ANOTHER PROBLEM from [#2](https://github.com/cfuendev/twimba/issues/2): Two-letter shorthands for easing properties (Such as `ea` and `eb`) not being correctly transpiled.
+      - do not ask why the sudden jump to 0.3.5, I suck at managing npm packages
+
+    - Apr 20, 2023: **0.3.6**
+      - fix issue [#3](https://github.com/cfuendev/twimba/issues/3): Fix normal css properties breaking the Imba code parsing process (ie. Writing `background` as opposed to `bg`).
 
 - Jan 19, 2023: **Twimba v.0.2.0**, various orders of magnitude faster than v0.1 and supports colors.
 

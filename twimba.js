@@ -472,24 +472,28 @@ export const twimba = (strings, ...values) => {
   for (let i = 0; i < tl.length; i++) {
     for (let j = 0; j < tl[i].length; j++) {
       let c = tl[i][j];
-      console.log(c)
-      if (eb && i === tl.length-1) {
+      console.log(c);
+      /* #2 fix - If e{letter} or ease-{property} has been opened, halt splitting until
+      rule has been parsed succesfully */
+      if (eb && i === tl.length - 1) {
         //console.log(`pillese la i: ${i}\ny la j: ${j}`)
         //console.log(`pillese la tl.length: ${tl.length}\ny la tl[i].length: ${tl[i].length}`)
         //console.log(`sera? ${i === tl.length-2}`)
-        console.log("DIOS")
-        console.log(tl)
-        console.log(eb+' '+tl[i])
-        pl.push(eb+' '+tl[i]);
+        //console.log("DIOS")
+        //console.log(tl)
+        //console.log(eb+' '+tl[i])
+        pl.push(eb + " " + tl[i]);
         eb = null;
         break;
       }
       // if before : then propertyName
       if (c === ":") {
+        // #2 fix, halts proper parsing/splitting of values until easing value is parsed.
         if (eb) {
           pl.push(eb);
           eb = null;
         }
+        console.log(b);
         // look for it in the not-custom
         let propertyNameRule = propertyNameRules[b];
         if (propertyNameRule) {
@@ -563,11 +567,6 @@ export const twimba = (strings, ...values) => {
             b = "";
             continue;
           }
-
-          // save to pl as CSS Value String
-          pl.push(propertyNameRule);
-          b = "";
-          continue;
         }
 
         // look for it in the custom
@@ -578,12 +577,18 @@ export const twimba = (strings, ...values) => {
           b = "";
           continue;
         }
+
+        // save to pl
+        pl.push(b);
+        b = "";
+        continue;
       }
       // if before end of line then propertyValue
       if (j === tl[i].length - 1) {
         // add the current letter before doing any checking (Otherwise it'll chopped off)
         b += c;
         // look for it
+        console.log(b);
         let propertyValueRule = propertyValueRules[b];
         if (propertyValueRule) {
           // save to pl as CSS Value String
@@ -604,7 +609,7 @@ export const twimba = (strings, ...values) => {
         }
 
         if (eb) {
-          console.log(`al final: ${eb}`)
+          //console.log(`al final: ${eb}`)
           eb += " " + b;
           b = "";
           continue;
