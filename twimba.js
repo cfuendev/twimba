@@ -472,7 +472,7 @@ export const twimba = (strings, ...values) => {
   for (let i = 0; i < tl.length; i++) {
     for (let j = 0; j < tl[i].length; j++) {
       let c = tl[i][j];
-      console.log(c);
+      //console.log(c);
       /* #2 fix - If e{letter} or ease-{property} has been opened, halt splitting until
       rule has been parsed succesfully */
       if (eb && i === tl.length - 1) {
@@ -493,7 +493,7 @@ export const twimba = (strings, ...values) => {
           pl.push(eb);
           eb = null;
         }
-        console.log(b);
+        //console.log(b);
         // look for it in the not-custom
         let propertyNameRule = propertyNameRules[b];
         if (propertyNameRule) {
