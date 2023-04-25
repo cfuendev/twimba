@@ -53,7 +53,7 @@ document.body.appendChild(div);
 
     - Apr 20, 2023: **0.3.7**
       - fix issue [#3](https://github.com/cfuendev/twimba/issues/3): Fix normal css properties breaking the Imba code parsing process (ie. Writing `background` as opposed to `bg`).
-      - do not ask why the sudden jump to 0.3.6, I FORGOT TO TEST THROUGHOUTLY BEFORE RELEASE I'M SORRY
+      - do not ask why the sudden jump to 0.3.7, I FORGOT TO TEST THROUGHOUTLY BEFORE RELEASE I'M SORRY
 
 - Jan 19, 2023: **Twimba v.0.2.0**, various orders of magnitude faster than v0.1 and supports colors.
 
